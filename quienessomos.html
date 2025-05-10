@@ -1,0 +1,219 @@
+<!DOCTYPE html> <!-- Indica que el documento es HTML5 -->
+<html lang="es"> <!-- Define el idioma como español -->
+<head>
+  <meta charset="UTF-8" /> <!-- Codificación de caracteres en UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsive: adapta la vista a dispositivos móviles -->
+
+  <!-- Enlace a hoja de estilos externa -->
+  <link rel="stylesheet" href="../css/teamweb.css" />
+
+  <!-- Carga del kit de Font Awesome (iconos) -->
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+  <!-- Otra versión de Font Awesome (puede ser redundante si la de arriba funciona) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <title>Quiénes Somos - Frutería LLMM</title> <!-- Título que aparece en la pestaña del navegador -->
+
+  <style>
+    /* Estilo general del cuerpo */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+    }
+
+    /* Contenedor principal de la sección "Quiénes somos" */
+    .quienes-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fffef7;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Texto de la sección */
+    .quienes-texto {
+      flex: 1 1 500px;
+      min-width: 280px;
+    }
+
+    .quienes-texto h2 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      color: #4CAF50;
+    }
+
+    .quienes-texto p {
+      font-size: 1.2em;
+      line-height: 1.7;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    /* Imagen de la sección */
+    .quienes-img {
+      flex: 1 1 400px;
+      min-width: 250px;
+      text-align: center;
+    }
+
+    .quienes-img img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease; /* Animación al hacer hover */
+    }
+
+    .quienes-img img:hover {
+      transform: scale(1.03); /* Aumenta ligeramente el tamaño al pasar el ratón */
+    }
+
+    /* Contenedor de tarjetas informativas */
+    .tarjetas-container {
+      max-width: 1100px;
+      margin: 20px auto 60px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      padding: 0 15px;
+    }
+
+    /* Cada tarjeta individual */
+    .tarjeta {
+      flex: 1 1 300px;
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-5px); /* Eleva la tarjeta al pasar el ratón */
+    }
+
+    .tarjeta h3 {
+      font-size: 1.5em;
+      color: #4CAF50;
+      margin-bottom: 10px;
+    }
+
+    .tarjeta p {
+      font-size: 1em;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .tarjeta img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilos responsivos para tabletas */
+    @media (max-width: 768px) {
+      .quienes-container {
+        flex-direction: column;
+        padding: 20px 15px;
+      }
+
+      .quienes-texto h2 {
+        font-size: 2em;
+        text-align: center;
+      }
+
+      .quienes-texto p {
+        font-size: 1em;
+        text-align: justify;
+      }
+
+      .quienes-img {
+        margin-top: 20px;
+      }
+    }
+
+    /* Estilos responsivos para móviles pequeños */
+    @media (max-width: 480px) {
+      .quienes-texto h2 {
+        font-size: 1.7em;
+      }
+
+      .quienes-texto p,
+      .tarjeta p {
+        font-size: 0.95em;
+      }
+
+      .tarjeta h3 {
+        font-size: 1.3em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Encabezado con menú de navegación -->
+  <header>
+    <nav>
+      <!-- Checkbox oculto que activa el menú en móvil -->
+      <input type="checkbox" id="ckbox" />
+      <label for="ckbox" class="drawer">
+        <i class="fa fa-bars" aria-hidden="true"></i> <!-- Icono menú hamburguesa -->
+      </label>
+
+      <h1>Frutería LLMM</h1>
+
+      <!-- Menú de navegación con iconos -->
+      <ul class="menu-box">
+        <li><a href="../home.html" class="fa fa-home">Home</a></li>
+        <li><a href="quienessomos.html" class="fa fa-users">Quiénes Somos</a></li>
+        <li><a href="areadeactuacion.html" class="fa fa-area-chart">Área de actuación</a></li>
+        <li><a href="contacto.html" class="fa fa-envelope">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Sección con descripción de la frutería -->
+    <section class="quienes-container">
+      <div class="quienes-texto">
+        <h2>¿Quiénes somos?</h2>
+        <p>Lorem ipsum dolor sit amet... <!-- Texto de ejemplo sobre la empresa --></p>
+        <p>Sed fringilla ipsum ut sem... <!-- Segundo párrafo de introducción --></p>
+      </div>
+      <div class="quienes-img">
+        <img src="../img/fruteria-interior.jpg" alt="Interior de la frutería" />
+      </div>
+    </section>
+
+    <!-- Sección de tarjetas informativas -->
+    <section class="tarjetas-container">
+      <!-- Tarjeta 1: Historia -->
+      <div class="tarjeta">
+        <h3>Nuestra Historia</h3>
+        <p>Lorem ipsum dolor sit amet... <!-- Historia resumida --></p>
+        <img src="../img/antigua.jpg" alt="Imagen antigua de la frutería" />
+      </div>
+
+      <!-- Tarjeta 2: Equipo -->
+      <div class="tarjeta">
+        <h3>Nuestro Equipo</h3>
+        <p>Curabitur vel nisi non... <!-- Información sobre el equipo humano --></p>
+        <img src="../img/organigrama.jpg" alt="Organigrama del equipo" />
+      </div>
+    </section>
+  </main>
+</body>
+</html>
