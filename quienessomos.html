@@ -1,7 +1,7 @@
-<!DOCTYPE html> <!-- Indica que el documento es HTML5 -->
-<html lang="es"> <!-- Define el idioma como español -->
+<!DOCTYPE html> 
+<html lang="es"> 
 <head>
-  <meta charset="UTF-8" /> <!-- Codificación de caracteres en UTF-8 -->
+  <meta charset="UTF-8" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsive: adapta la vista a dispositivos móviles -->
 
   <!-- Enlace a hoja de estilos externa -->
@@ -13,7 +13,7 @@
   <!-- Otra versión de Font Awesome (puede ser redundante si la de arriba funciona) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <title>Quiénes Somos - Frutería LLMM</title> <!-- Título que aparece en la pestaña del navegador -->
+  <title>Quiénes Somos - Frutería LLMM</title> 
 
   <style>
     /* Estilo general del cuerpo */
@@ -79,25 +79,28 @@
 
     /* Contenedor de tarjetas informativas */
     .tarjetas-container {
-      max-width: 1100px;
-      margin: 20px auto 60px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-      padding: 0 15px;
-    }
+  max-width: 800px;
+  margin: 20px auto 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 0 15px;
+}
+
 
     /* Cada tarjeta individual */
     .tarjeta {
-      flex: 1 1 300px;
-      background-color: #ffffff;
-      border: 1px solid #e0e0e0;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      padding: 20px;
-      transition: transform 0.3s ease;
-    }
+  width: 100%;
+  max-width: 600px; /* Opcional, para limitar el ancho */
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
 
     .tarjeta:hover {
       transform: translateY(-5px); /* Eleva la tarjeta al pasar el ratón */
@@ -116,12 +119,14 @@
       margin-bottom: 15px;
     }
 
-    .tarjeta img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
+   .tarjeta img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 
     /* Estilos responsivos para tabletas */
     @media (max-width: 768px) {
@@ -183,8 +188,8 @@
     <section class="quienes-container">
       <div class="quienes-texto">
         <h2>¿Quiénes somos?</h2>
-        <p>Lorem ipsum dolor sit amet... <!-- Texto de ejemplo sobre la empresa --></p>
-        <p>Sed fringilla ipsum ut sem... <!-- Segundo párrafo de introducción --></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis no strud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis auteUt enim ad minim veniam, quis no strud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        <p>Sed fringilla ipsum ut sem</p>
       </div>
       <div class="quienes-img">
         <img src="./images/fruteria-interior.jpg" alt="Interior de la frutería" />
