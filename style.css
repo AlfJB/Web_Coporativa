@@ -43,14 +43,14 @@
     text-decoration: underline;
   }
   
-  /* Main Container */
+ 
   .container {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
   }
   
-  /* Hero con fondo */
+  
   .hero-section {
     position: relative;
     height: 80vh;
@@ -84,7 +84,7 @@
   
   .hero-content h2 {
     font-size: 2.5rem;
-    color: #facc15; /* Amarillo suave */
+    color: #facc15; 
     margin-bottom: 1rem;
   }
   
@@ -93,7 +93,7 @@
     margin-bottom: 1rem;
   }
   
-  /* Cards secundarios */
+ 
   .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
