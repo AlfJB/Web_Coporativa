@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsive: adapta la vista a dispositivos móviles -->
 
   <!-- Enlace a hoja de estilos externa -->
-  <link rel="stylesheet" href="../css/teamweb.css" />
+  <link rel="stylesheet" href="./CSS/style.css" />
 
   <!-- Carga del kit de Font Awesome (iconos) -->
   <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
@@ -42,6 +42,7 @@
     .quienes-texto {
       flex: 1 1 500px;
       min-width: 280px;
+
     }
 
     .quienes-texto h2 {
@@ -164,22 +165,14 @@
 
 <body>
   <!-- Encabezado con menú de navegación -->
-  <header>
-    <nav>
-      <!-- Checkbox oculto que activa el menú en móvil -->
-      <input type="checkbox" id="ckbox" />
-      <label for="ckbox" class="drawer">
-        <i class="fa fa-bars" aria-hidden="true"></i> <!-- Icono menú hamburguesa -->
-      </label>
-
-      <h1>Frutería LLMM</h1>
-
-      <!-- Menú de navegación con iconos -->
-      <ul class="menu-box">
-        <li><a href="../home.html" class="fa fa-home">Home</a></li>
-        <li><a href="quienessomos.html" class="fa fa-users">Quiénes Somos</a></li>
-        <li><a href="areadeactuacion.html" class="fa fa-area-chart">Área de actuación</a></li>
-        <li><a href="contacto.html" class="fa fa-envelope">Contacto</a></li>
+   <header class="main-header">
+    <h1 class="logo">Frutería FRUITMANIA</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">🏠Home</a></li>
+        <li><a href="#">👤Quiénes Somos</a></li>
+        <li><a href="areadeactuacion.html">🗺Área de Actuación</a></li>
+        <li><a href="#">✉Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -194,7 +187,7 @@
         <p>Sed fringilla ipsum ut sem... <!-- Segundo párrafo de introducción --></p>
       </div>
       <div class="quienes-img">
-        <img src="../img/fruteria-interior.jpg" alt="Interior de la frutería" />
+        <img src="./images/fruteria-interior.jpg" alt="Interior de la frutería" />
       </div>
     </section>
 
@@ -204,16 +197,19 @@
       <div class="tarjeta">
         <h3>Nuestra Historia</h3>
         <p>Lorem ipsum dolor sit amet... <!-- Historia resumida --></p>
-        <img src="../img/antigua.jpg" alt="Imagen antigua de la frutería" />
+        <img src="./images/antigua.jpg" alt="Imagen antigua de la frutería" />
       </div>
 
       <!-- Tarjeta 2: Equipo -->
       <div class="tarjeta">
         <h3>Nuestro Equipo</h3>
         <p>Curabitur vel nisi non... <!-- Información sobre el equipo humano --></p>
-        <img src="../img/organigrama.jpg" alt="Organigrama del equipo" />
+        <img src="./images/organigrama.jpg" alt="Organigrama del equipo" />
       </div>
     </section>
   </main>
+  <footer>
+    <p>&copy; 2025 FRUITMANIA - Todos los derechos reservados</p>
+  </footer>
 </body>
 </html>
