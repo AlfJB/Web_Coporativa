@@ -100,7 +100,9 @@ el menú cuando se marca/desmarca. */
   
   .hero-section {
     position: relative;
-    height: 80vh;
+    margin-top: 50px;
+    height: 90vh;
+    width: 100vw;
     background-image: url('images/fondoFruit.jpg');
     background-size: cover;
     background-position: center;
