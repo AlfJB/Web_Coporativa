@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FRUITMANIA - Home</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+      </head>
+<body>
+    <header class="main-header">
+        <h1 class="logo">Frutería FRUITMANIA</h1>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">🏠Home</a></li>
+            <li><a href="quienessomos.html">👤Quiénes Somos</a></li>
+            <li><a href="areadeactuacion.html">🗺Área de Actuación</a></li>
+            <li><a href="contacto.html">✉Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+    <h1 class="titulo">Formulario FRUITMANIA</h1>
+    <section class="form_contemido">
+        <h2><b>Datos personales</b></h2>
+        <form action="#" method="post">
+          <label for="nombre">Nombre completo *</label>
+          <input type="text" id="nombre" name="nombre" required>
+    
+          <label for="dni">DNI o documento equivalente *</label>
+          <input type="text" id="dni" name="dni" required>
+    
+          <label for="email">Correo electrónico *</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="mensaje">Solicitud / Comentario *</label>
+          <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+    
+          <div class="checkbox">
+            <input type="checkbox" id="acepto" name="acepto" required>
+            <label for="acepto">Acepto la política de privacidad *</label>
+          </div>
+    
+          <div class="form-buttons">
+            <button type="submit"class="enviar">Enviar solicitud</button>
+            <button type="reset" class="cancelar">Cancelar</button>
+          </div>
+        </form>
+        <p class="infotext">
+            El responsable del tratamiento de los datos personales facilitados 
+            en el formulario es FRUITMANIA S.A. en base al interés legítimo en 
+            tratarlos para atender las consultas y denuncias que nos envíes. 
+            En función de la consulta/denuncia planteada es posible que 
+            tengamos que comunicar tus datos personales a alguna de las 
+            empresas de nuestro grupo. Tienes derecho a acceder, rectificar 
+            y suprimir tus datos, así como otros derechos.
+        </p>
+      </section>
+</body>
+</html>
