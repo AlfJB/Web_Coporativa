@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f8fafc;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .main-header {
+    background-color: #b91c1c;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .main-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Container */
+  .container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* Hero con fondo */
+  .hero-section {
+    position: relative;
+    height: 80vh;
+    background-image: url('images/fondoFruit.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece para que el texto se lea mejor */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .hero-content {
+    color: #fff;
+    max-width: 800px;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+    color: #facc15; /* Amarillo suave */
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Cards secundarios */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .card-title {
+    color: #22c55e;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card img {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    background-color: #b91c1c;
+    color: white;
+  }
+  
