@@ -1,3 +1,13 @@
+
+:root{
+    --primary: #b94242;
+    --secundary: #2e4469;
+    --background: #35495e;
+    --black-text: rgb(61,61,61);
+    --white-text: #fff;
+    --button-hover: #753838;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,40 +20,76 @@
     color: #333;
     line-height: 1.6;
   }
-  
-  
-  .main-header {
-    background-color: #b91c1c;
-    color: white;
-    padding: 1rem 2rem;
+nav{
+    background-color: var(--primary);
+    height: 10vh;
+    width: 100%;
+    /* alinea los elementos horizontalmente. */
     display: flex;
-    justify-content: space-between;
+    /* separa los elementos equitativamente. */
+    justify-content: space-around; 
+    /* los centra verticalmente. */
     align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-  }
-  
-  .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  
-  .main-nav ul {
-    list-style: none;
+}
+
+header h1{
+    color: var(--white-text);
+    font-size: 20px;
+    /* separa las letras */
+    letter-spacing: 0.5rem;
+}
+
+/* Convierte la lista <ul> en horizontal. */
+nav ul{
     display: flex;
-    gap: 1rem;
-  }
-  
-  .main-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .main-nav a:hover {
-    text-decoration: underline;
-  }
-  
+}
+
+/* Separa los ítems con una línea delgada. */
+nav ul li{
+    border-right: solid 0.1rem var(--black-text);
+}
+
+/* El último no tiene borde. */
+nav ul li:last-child{
+    border-right: none;
+}
+
+/* Para los enlaces del menu */
+nav ul li a{
+    color:var(--white-text);
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    /* Convierte todo el texto en mayúsculas */
+    text-transform: uppercase;
+}
+
+/* Cuando pasas el mouse por encima de un 
+ítem del menú, cambia de color con animación suave. */
+nav ul li:hover{
+    background-color: var(--button-hover);
+    transition: all 0.3s;
+}
+
+/* .drawer es el ícono del menú hamburguesa o tres lineas */
+.drawer{
+    color: var(--white-text);
+    /* No es necesario el float por el uso del display flex en el nav */
+    /* float:left; */
+    /* Cambia el cursor del mouse a una mano (🖐️) */
+    cursor: pointer;
+    /* se oculta por defecto */
+    display: none;
+    border: solid 0.1rem var(--white-text);
+    padding: 0.2rem;
+    border-radius: 0.1rem;
+}
+
+/* Se usa para mostrar/ocultar 
+el menú cuando se marca/desmarca. */
+#ckbox{
+    /* Este checkbox está oculto visualmente. */
+    display: none;
+}
  
   .container {
     max-width: 1200px;
@@ -307,4 +353,50 @@ button {
   font-size: 0.9rem;
   color: white;
   line-height: 1.4;
+}
+@media(max-width:1300px){
+
+    nav{
+        /* En lugar de distribuir los elementos 
+        de manera equitativa, los alineas hacia la izquierda */
+        justify-content: flex-start;
+    }
+    .drawer{
+        /* Mostrar el botón hamburguesa = block */
+        display: block;
+    }
+    nav h1{
+        /* Separar el título del borde */
+        margin-left: 1rem;
+    }
+    ul{
+        /* el menú se queda fijo en la pantalla. */
+        position: fixed;
+        /* ocupa la mitad de la pantalla. */
+        width: 50%;
+        height: 100vh;
+        background-color: var(--background);
+        /* empieza justo debajo del nav (que mide 10% del alto). */
+        top: 10vh;
+        left: -100%;
+        text-align: left;
+        transition: all 0.5s;
+        /* pone los enlaces en columna. */
+        flex-direction: column;
+        align-content: stretch;
+    }
+    nav ul li {
+        padding: 1rem 0px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        /* Los separa con una línea gris clara */
+        border-bottom: solid 0.1rem rgba(201, 196, 196, 0.4);
+    }
+    /* Mostrar el menú cuando el checkbox está activado */
+    #ckbox:checked~.menu-box{
+        /* 0px para que esté pegado a la izquierda */
+        left: 0px;
+    }
+
 }
