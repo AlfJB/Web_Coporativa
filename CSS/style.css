@@ -201,4 +201,110 @@ main form {
     background-color: #b91c1c;
     color: white;
   }
-  
+
+/* CONTACTO */
+
+.titulo{
+  padding: 3rem;
+  padding-bottom: 0rem;
+  color: rgb(30, 170, 30);
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form_contemido {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+  background-image: url('/images/frutasfondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-color: #76da9b;
+  color: white;
+}
+
+.form_contemido h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  color: var(--text-color);
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+form input[type="email"] {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.checkbox input {
+  margin-right: 0.5rem;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.enviar {
+  background-color: rgb(145, 139, 139);
+}
+
+.enviar:hover {
+  background-color: rgb(46, 46, 158);
+}
+
+.cancelar {
+  background-color: rgb(145, 139, 139);
+}
+
+.cancelar:hover {
+  background-color: rgb(155, 50, 50);
+}
+
+.infotext {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: white;
+  line-height: 1.4;
+}
