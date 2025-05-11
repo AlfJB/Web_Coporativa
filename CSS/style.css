@@ -1,4 +1,3 @@
-
 :root{
     --primary: #b94242;
     --secundary: #2e4469;
@@ -12,93 +11,74 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
   
-  body {
+body {
     font-family: 'Quicksand', sans-serif;
     background-color: #f8fafc;
     color: #333;
     line-height: 1.6;
-  }
-nav{
+}
+
+nav {
     background-color: var(--primary);
     height: 10vh;
     width: 100%;
-    /* alinea los elementos horizontalmente. */
     display: flex;
-    /* separa los elementos equitativamente. */
-    justify-content: space-around; 
-    /* los centra verticalmente. */
+    justify-content: space-around;
     align-items: center;
 }
 
-header h1{
+header h1 {
     color: var(--white-text);
     font-size: 20px;
-    /* separa las letras */
     letter-spacing: 0.5rem;
 }
 
-/* Convierte la lista <ul> en horizontal. */
-nav ul{
+nav ul {
     display: flex;
 }
 
-/* Separa los ítems con una línea delgada. */
-nav ul li{
+nav ul li {
     border-right: solid 0.1rem var(--black-text);
 }
 
-/* El último no tiene borde. */
-nav ul li:last-child{
+nav ul li:last-child {
     border-right: none;
 }
 
-/* Para los enlaces del menu */
-nav ul li a{
-    color:var(--white-text);
+nav ul li a {
+    color: var(--white-text);
     font-size: 1.2rem;
     padding: 0.8rem 1rem;
-    /* Convierte todo el texto en mayúsculas */
     text-transform: uppercase;
 }
 
-/* Cuando pasas el mouse por encima de un 
-ítem del menú, cambia de color con animación suave. */
-nav ul li:hover{
+nav ul li:hover {
     background-color: var(--button-hover);
     transition: all 0.3s;
 }
 
-/* .drawer es el ícono del menú hamburguesa o tres lineas */
-.drawer{
+.drawer {
     color: var(--white-text);
-    /* No es necesario el float por el uso del display flex en el nav */
-    /* float:left; */
-    /* Cambia el cursor del mouse a una mano (🖐️) */
     cursor: pointer;
-    /* se oculta por defecto */
     display: none;
     border: solid 0.1rem var(--white-text);
     padding: 0.2rem;
     border-radius: 0.1rem;
 }
 
-/* Se usa para mostrar/ocultar 
-el menú cuando se marca/desmarca. */
-#ckbox{
-    /* Este checkbox está oculto visualmente. */
+#ckbox {
     display: none;
 }
- 
-  .container {
+
+.container {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
-  }
-  
-  
-  .hero-section {
+}
+
+.hero-section {
     position: relative;
     margin-top: 50px;
     height: 90vh;
@@ -112,79 +92,79 @@ el menú cuando se marca/desmarca. */
     border-radius: 15px;
     margin-bottom: 2rem;
     overflow: hidden;
-  }
-  
-  .overlay {
-    background-color: rgba(0, 0, 0, 0.5); /* Oscurece para que el texto se lea mejor */
+    z-index: 1; /* Añadido */
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
-  }
-  
-  .hero-content {
+}
+
+.hero-content {
     color: #fff;
     max-width: 800px;
     text-align: center;
     padding: 1.5rem;
-  }
-  
-  .hero-content h2 {
+}
+
+.hero-content h2 {
     font-size: 2.5rem;
-    color: #facc15; 
+    color: #facc15;
     margin-bottom: 1rem;
-  }
-  
-  .hero-content p {
+}
+
+.hero-content p {
     font-size: 1.1rem;
     margin-bottom: 1rem;
-  }
-  
- 
-  .cards-grid {
+}
+
+.cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-  }
-  
-  .card {
+}
+
+.card {
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 1.5rem;
     text-align: center;
-  }
-  
-  .card-title {
+}
+
+.card-title {
     color: #22c55e;
     font-size: 1.5rem;
     margin-bottom: 1rem;
-  }
-  
-  .card img {
+}
+
+.card img {
     width: 100%;
     margin-top: 1rem;
     border-radius: 10px;
-  }
+}
 
-  /*Área de actuación + TiendasColaboradoras*/
-
-  main {
+main {
     padding-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
-    
+    position: relative;
+    z-index: 1; /* Añadido */
 }
-main .content{
-    width: 750px; 
-    height: 200px; 
-    border: 1px solid rgba(201, 196, 196, 0.4) ; 
-    padding: 10px; 
-    margin: 20px; 
+
+main .content {
+    width: 750px;
+    height: 200px;
+    border: 1px solid rgba(201, 196, 196, 0.4);
+    padding: 10px;
+    margin: 20px;
     border-radius: 30px;
     box-shadow: 3px 3px 3px 3px whitesmoke;
 }
@@ -194,7 +174,6 @@ main h1 {
     color: var(--black-text);
     text-align: center;
     margin: 1rem;
-    
 }
 
 main p {
@@ -208,8 +187,6 @@ main form {
     justify-content: center;
 }
 
-
-
 .Logos h1 {
     padding-top: 2rem;
     font-size: 1.7rem;
@@ -218,187 +195,170 @@ main form {
     margin: 1rem;
     font-family: "Quicksand", sans-serif;
 }
-.Logos li img{
+
+.Logos li img {
     padding-top: 5rem;
-    display: block; 
+    display: block;
     margin-left: auto;
     margin-right: auto;
     height: 50vh;
 }
 
 .btn {
-  display: inline-block;
-  background-color: #22c55e;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  margin:1%;
-}
-.btn:hover {
-  background-color: #16a34a;
+    display: inline-block;
+    background-color: #22c55e;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 1%;
 }
 
-  
-  /* Footer */
-  footer {
+.btn:hover {
+    background-color: #16a34a;
+}
+
+footer {
     text-align: center;
     padding: 1rem;
     margin-top: 3rem;
     background-color: #b91c1c;
     color: white;
-  }
+    position: relative;
+    z-index: 1; /* Añadido */
+}
 
 /* CONTACTO */
 
-.titulo{
-  padding: 3rem;
-  padding-bottom: 0rem;
-  color: rgb(30, 170, 30);
-  text-align: center;
-  font-size: 35px;
-  margin-bottom: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
+.titulo {
+    padding: 3rem;
+    padding-bottom: 0rem;
+    color: rgb(30, 170, 30);
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .form_contemido {
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
-  background-image: url('/images/frutasfondo.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-color: #76da9b;
-  color: white;
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    background-image: url('/images/frutasfondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #76da9b;
+    color: white;
 }
 
 .form_contemido h2 {
-  color: white;
-  margin-bottom: 1.5rem;
-  text-align: center;
+    color: white;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 form label {
-  display: block;
-  margin-top: 1rem;
-  color: var(--text-color);
+    display: block;
+    margin-top: 1rem;
+    color: var(--text-color);
 }
 
-form input[type="text"] {
-  width: 100%;
-  padding: 1rem;
-  margin-top: 1rem;
-  border-radius: 10px;
-  font-size: 1rem;
-}
-
-form input[type="email"] {
-  width: 100%;
-  padding: 1rem;
-  margin-top: 1rem;
-  border-radius: 10px;
-  font-size: 1rem;
-}
-
+form input[type="text"],
+form input[type="email"],
 form textarea {
-  width: 100%;
-  padding: 1rem;
-  margin-top: 1rem;
-  border-radius: 10px;
-  font-size: 1rem;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
 }
 
 .checkbox {
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
 }
 
 .checkbox input {
-  margin-right: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 button {
-  margin-top: 1.5rem;
-  padding: 1rem;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
 }
 
 .enviar {
-  background-color: rgb(145, 139, 139);
+    background-color: rgb(145, 139, 139);
 }
 
 .enviar:hover {
-  background-color: rgb(46, 46, 158);
+    background-color: rgb(46, 46, 158);
 }
 
 .cancelar {
-  background-color: rgb(145, 139, 139);
+    background-color: rgb(145, 139, 139);
 }
 
 .cancelar:hover {
-  background-color: rgb(155, 50, 50);
+    background-color: rgb(155, 50, 50);
 }
 
 .infotext {
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
-  color: white;
-  line-height: 1.4;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: white;
+    line-height: 1.4;
 }
-@media(max-width:1300px){
 
-    nav{
-        /* En lugar de distribuir los elementos 
-        de manera equitativa, los alineas hacia la izquierda */
+@media(max-width:1300px) {
+    nav {
         justify-content: flex-start;
     }
-    .drawer{
-        /* Mostrar el botón hamburguesa = block */
+
+    .drawer {
         display: block;
     }
-    nav h1{
-        /* Separar el título del borde */
+
+    nav h1 {
         margin-left: 1rem;
     }
-    ul{
-        /* el menú se queda fijo en la pantalla. */
+
+    ul {
         position: fixed;
-        /* ocupa la mitad de la pantalla. */
         width: 50%;
         height: 100vh;
         background-color: var(--background);
-        /* empieza justo debajo del nav (que mide 10% del alto). */
         top: 10vh;
         left: -100%;
         text-align: left;
         transition: all 0.5s;
-        /* pone los enlaces en columna. */
         flex-direction: column;
         align-content: stretch;
+        z-index: 1000; /* Solución: menú sobre contenido */
     }
+
     nav ul li {
         padding: 1rem 0px;
         display: flex;
         flex-direction: column;
         padding-left: 2rem;
-        /* Los separa con una línea gris clara */
         border-bottom: solid 0.1rem rgba(201, 196, 196, 0.4);
     }
-    /* Mostrar el menú cuando el checkbox está activado */
-    #ckbox:checked~.menu-box{
-        /* 0px para que esté pegado a la izquierda */
+
+    #ckbox:checked~.menu-box {
         left: 0px;
     }
-
 }
+
